@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chamber of Commerce </title>
+
+    <meta name="description"
+        content="WDD 231 - Dynamic Web Fundamentals 2, Prince Okoi, web design and development resources, Week 1 project">
+    <meta name="author" content="Prince Francis Okoi">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Javascripts -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>WELCOME TO WDD231 WEB FUNDAMENTALS</h1>
+    <header>
+        <div class="logo">
+            <img src="images/nigeria.webp" alt="Course homepage">
+            <span>Prince Francis Okoi</span>
+        </div>
+        <button id="menu">&#9776;</button>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="row_one">
+            <section class="about">
+                <h2> About Me</h2>
+                <p>Hello, my name is Prince Francis Okoi and I currently reside in Calabar, a renowned
+                    tourist destination celebrated for its rich culture, vibrant traditions and warm
+                    hospitality. I am deeply passionate about education and firmly believe in continuous
+                    personal growth. My strong interest in technology inspired me to pursue a first
+                    degree in Computer Science and currently acquiring another degree in Software Engineering.
+                    I value adaptability, innovation and a user-focused solutions and I am committed to
+                    growing as a developer while contributing value wherever technology meets
+                    opportunity.
+                </p>
+            </section>
+        
+            <section class="photo">
+                <h2> Student Photo </h2>
+                <img src="images/profile.jpg" alt="Prince Okoi">
+            </section>
+        </div>
+
+        <section class="course">
+        
+            <h2>Web Certificate Courses</h2>
+        
+            <div class="buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+                    
+            <p class="credits">
+                The Total Credits :
+                <span id="credits"></span>
+            </p>
+        
+            <div id="course_card"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+    
+        <div class="social">
+            <a href="https://github.com/princeokoi">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+    
+            <a href="https://linkedin.com/in/prince-okoi">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+    
+            <a href="https://x.com">
+                <img src="images/twitter-x.svg" alt="X">
+            </a>
+        </div>
+    
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Prince Francis Okoi | Nigeria
+        </p> <br>
+    
+        <p id="lastModified"></p>
+    
+    </footer>
+
 </body>
+
 </html>
