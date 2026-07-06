@@ -126,7 +126,7 @@ function displayCredits(courseList) {
     credits.textContent = total;
 }
 
-// Filter buttons
+// Filter buttons event
 allBtn.addEventListener("click", () => {
     getCourse(courses);
 });
