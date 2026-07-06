@@ -116,7 +116,7 @@ function getCourse(courseList) {
     displayCredits(courseList);
 }
 
-// Calculate credits using reduce()
+// Calculate the total credits using reduce()
 function displayCredits(courseList) {
 
     const total = courseList.reduce((sum, course) => {
