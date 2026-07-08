@@ -126,20 +126,34 @@ function displayCredits(courseList) {
     credits.textContent = total;
 }
 
+// Select active button
+function setActiveButton(button) {
+    document.querySelectorAll(".buttons button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+}
+
 // Filter buttons event
 allBtn.addEventListener("click", () => {
+    setActiveButton(allBtn);
     getCourse(courses);
 });
 
 cseBtn.addEventListener("click", () => {
+    setActiveButton(cseBtn);
     const cseCourses = courses.filter(course => course.subject === "CSE");
     getCourse(cseCourses);
 });
 
 wddBtn.addEventListener("click", () => {
+    setActiveButton(wddBtn);
     const wddCourses = courses.filter(course => course.subject === "WDD");
     getCourse(wddCourses);
 });
 
+//set the active button on first load
+setActiveButton(allBtn);
 // Initial display
 getCourse(courses);

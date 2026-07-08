@@ -79,6 +79,12 @@ nav a:hover {
     color: #1d3557;
 }
 
+nav a.active {
+    background: transparent;
+    color: var(--secondary);
+    border-bottom: 3px solid var(--secondary);
+}
+
 /* Main */
 main {
     max-width: 1100px;
@@ -130,6 +136,7 @@ section h2 {
     padding: .8rem;
     border: none;
     background: var(--primary);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -137,6 +144,13 @@ section h2 {
 
 .buttons button:hover {
     background: #457b9d;
+}
+
+.buttons button.active {
+    background: #fcfaf8;
+    color: #000;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
 }
 
 .credits {
