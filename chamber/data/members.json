@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Nugi Technologies",
+        "address": "15 Marian Road, Calabar, Cross River State",
+        "phone": "+234-708-652-3678",
+        "website": "https://www.nugitech.com",
+        "image": "nugi_tech.webp",
+        "membership": "Gold",
+        "industry": "Information Technology",
+        "description": "Providing software development, networking, and IT consulting services.",
+        "email": "info@nugitech.com"
+    },
+    {
+        "name": "Diamond Crue Hotel Calabar",
+        "address": "12 Ishie Street, Big Qua Town, Calabar 540281, Cross River",
+        "phone": "+234 817 175 8080",
+        "website": "https://diamondcruehotel.com",
+        "image": "diamond_crue.webp",
+        "membership": "Silver",
+        "industry": "Hospitality",
+        "description": "Luxury accommodation with conference and event facilities.",
+        "email": "info@diamondcruehotel.com"
+    },
+    {
+        "name": "Cross River Farms Ltd",
+        "address": "45 Ikom Road, Calabar",
+        "phone": "+234 806 284 6420",
+        "website": "https://farmersportal.crossriverstate.gov.ng",
+        "image": "crossriver_farms.webp",
+        "membership": "Member",
+        "industry": "Agriculture",
+        "description": "Suppliers of fresh agricultural produce and livestock products.",
+        "email": "info@crossriverstatefarmersportal.com.ng"
+    },
+    {
+        "name": "Midatalinks Telecom",
+        "address": "8 Goldie Street, Calabar",
+        "phone": "+234 813 445 6677",
+        "website": "https://midatalinks.com.ng/",
+        "image": "midatalinks.webp",
+        "membership": "Gold",
+        "industry": "Telecommunications",
+        "description": "Internet services, fiber installation, CCTV, and networking solutions.",
+        "email": "support@midatalinks.com"
+    },
+    {
+        "name": "Royal Prints Nigeria",
+        "address": "27 Etta Agbor Road, Calabar",
+        "phone": "+234 807 321 9876",
+        "website": "https://www.royalprints.com",
+        "image": "royalprint.webp",
+        "membership": "Silver",
+        "industry": "Printing & Branding",
+        "description": "Professional printing, branding, and graphic design services.",
+        "email": "info@royalprints.com"
+    },
+    {
+        "name": "Valuemart Supermarket",
+        "address": " 74A Ndidem Usang Iso Rd, Calabar, Cross River",
+        "phone": "+234 908 875 8757",
+        "website": "https://www.valuemartdc.com",
+        "image": "valuemart.webp",
+        "membership": "Member",
+        "industry": "Retail",
+        "description": "One-stop supermarket offering groceries and household essentials.",
+        "email": "info@valuemartdc.com"
+    },
+    {
+        "name": "Prime Fitness Center",
+        "address": "5 MCC Road, Calabar",
+        "phone": "+234 812 998 7766",
+        "website": "https://www.primefitness.com",
+        "image": "prime_fitness.webp",
+        "membership": "Silver",
+        "industry": "Health & Fitness",
+        "description": "Modern fitness gym offering personal training and wellness programs.",
+        "email": "contact@primefitness.com"
+    }
+]
