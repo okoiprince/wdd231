@@ -23,6 +23,10 @@ img {
 
 /*  Header segment */
 header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
     background: var(--primary);
     color: var(--secondary);
     padding: 1rem;
@@ -51,6 +55,10 @@ header {
     background: none;
     color: white;
     cursor: pointer;
+}
+
+nav {
+    grid-column: 1 / 3;
 }
 
 nav ul {
