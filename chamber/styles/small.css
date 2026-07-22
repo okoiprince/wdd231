@@ -46,6 +46,10 @@ header {
     font-weight: bold;
 }
 
+.logo p {
+    color: gold;
+}
+
 #menu {
     font-size: 2rem;
     border: none;
@@ -81,14 +85,14 @@ nav a {
 }
 
 nav a:hover {
-    background: white;
+    background: gold;
     color: #1d3557;
 }
 
 nav a.active {
     background: transparent;
     color: var(--secondary);
-    border-bottom: 3px solid var(--secondary);
+    border-bottom: 3px solid #fdcf00;
 }
 
 /* Main Style  */
@@ -101,6 +105,139 @@ main {
 h1 {
     margin-bottom: 1rem;
     font-family: var(--header-font);
+}
+
+/* Home Hero Image Style */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color:rgba(5, 41, 139, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    max-width: 700px;
+}
+
+.hero-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.cta:hover {
+    color: gold;
+    background: #05298b;
+}
+
+/* Home Grid Section */
+.home-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Home Page Cards */
+.events,
+.current-weather,
+.forcast,
+.spotlights {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.weather {
+    display: grid;
+    gap: 1rem;
+}
+
+.weather > h2 {
+    margin-bottom: 0;
+}
+
+/* Current Weather */
+.current-weather {
+    text-align: center;
+}
+
+#temperature {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin: .5rem 0;
+}
+
+#description {
+    text-transform: capitalize;
+}
+
+/* Forecast */
+.forcast {
+    text-align: center;
+}
+
+#forecast {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#forecast div {
+    background: var(--accent);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Spotlight cards */
+#spotlight-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+#spotlight-cards section {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+#spotlight-cards img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 1rem auto;
+}
+
+#spotlight-cards h3 {
+    background: var(--primary);
+    color: var(--white);
+    padding: .75rem;
+    margin: -1rem -1rem 1rem;
 }
 
 /*  Buttons Style */
