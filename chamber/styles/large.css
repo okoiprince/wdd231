@@ -1,5 +1,18 @@
 @media only screen and (min-width: 768px) {
 
+    :root {
+    --primary: #08015e;
+    --secondary: #fff;
+    --accent: #f4f4f4;
+    --white: #ffffff;
+    --dark: #222;
+    --border: #ddd;
+    --box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+
+    --header-font: "Exo", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
     /* Header segment*/
     header {
         display: grid;
@@ -98,7 +111,7 @@
     .weather {
         grid-column: 1 / 4;
         display: grid;
-        grid-template-columns: 3 1fr;
+        grid-template-columns: 300px 1fr;
         gap: 1.5rem;
         background: transparent;
         box-shadow: none;
@@ -114,6 +127,7 @@
     .forcast {
         background: #fff;
         border-radius: 10px;
+        text-align: justify;
         padding: 1.5rem;
         box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
     }
