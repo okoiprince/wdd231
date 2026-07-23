@@ -1,42 +1,51 @@
-const key = "be85596064c96f6afa787afb9e38be29";
 
-const weather_url = `https://api.openweathermap.org/data/2.5/forecast?q=Calabar&units=metric&appid=${key}`;
+const apiKey = "be85596064c96f6afa787afb9e38be29";
+
+const latitude = 5.002646651503561;
+const longitude = 8.35434003707949;
+
+const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
 
 async function getWeather() {
+    try {
+        const response = await fetch(url);
 
-    const response = await fetch(weather_url);
+        if (!response.ok) {
+            throw new Error("Weather data could not be retrieved.");
+        }
 
-    const data = await response.json();
+        const data = await response.json();
 
-    displayWeather(data);
+        // Display current weather
+        document.querySelector("#temperature").textContent =
+            `${Math.round(data.list[0].main.temp)}°C`;
 
-}
+        document.querySelector("#description").textContent =
+            data.list[0].weather[0].description;
 
-function displayWeather(data) {
+        // Display 3-day forecast
+        const forecast = document.querySelector("#forecast");
+        forecast.innerHTML = "";
 
-    document.querySelector("#temperature").textContent =
-        `${data.list[0].main.temp.toFixed(1)}°C`;
+        const days = [8, 16, 24];
 
-    document.querySelector("#description").textContent =
-        data.list[0].weather[0].description;
+        days.forEach(index => {
+            const item = data.list[index];
+            const date = new Date(item.dt_txt);
 
-    const forecast = document.querySelector("#forecast");
+            const card = document.createElement("div");
 
-    forecast.innerHTML = "";
+            card.innerHTML = `
+                <h4>${date.toLocaleDateString("en-US", { weekday: "short" })}</h4>
+                <p>${Math.round(item.main.temp)}°C</p>
+            `;
 
-    const days = [8, 16, 24];
+            forecast.appendChild(card);
+        });
 
-    days.forEach(day => {
-
-        const p = document.createElement("p");
-
-        p.textContent =
-            `${new Date(data.list[day].dt_txt).toLocaleDateString("en", { weekday: "short" })}: ${data.list[day].main.temp.toFixed(0)}°C`;
-
-        forecast.appendChild(p);
-
-    });
-
+    } catch (error) {
+        console.error(error);
+    }
 }
 
 getWeather();
