@@ -96,8 +96,11 @@
         grid-column: 1 / 4;
     }
 
-    /* Shared card styling */
+    .all-event-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
+    /* Shared card styling */
     .events,
     .spotlights {
         background: #fff;
@@ -106,14 +109,13 @@
         box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
     }
 
-
     /* Weather Section */
     .weather {
         grid-column: 1 / 4;
         display: grid;
         grid-template-columns: 300px 1fr;
         gap: 1.5rem;
-        background: transparent;
+        background: white;
         box-shadow: none;
         padding: 0;
     }
@@ -125,7 +127,7 @@
 
     .current-weather,
     .forcast {
-        background: #fff;
+        background: #f8f8f8;
         border-radius: 10px;
         text-align: justify;
         padding: 1.5rem;
