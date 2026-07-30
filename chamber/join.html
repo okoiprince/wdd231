@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nigeria Chamber of Commerce</title>
+    <title>Join the Nigeria Chamber of Commerce</title>
 
     <meta name="description"
         content="WDD 231 - Dynamic Web Fundamentals 2, Nigeria Chamber of Commerce promoting businesses and economic development in Nigeria">
@@ -160,36 +160,28 @@
                     <h2>NP Membership</h2>
                     <p>Our free membership for small scale businesses and nonprofit organizations.</p>
 
-                    <button onclick="document.getElementById('npModal').showModal()">
-                        Learn More
-                    </button>
+                    <button id="npBtn">Learn More</button>
                 </div>
 
                 <div class="membership-card">
                     <h2>Bronze Membership</h2>
                     <p>Affordable membership for growing businesses and assess to government grants.</p>
 
-                    <button onclick="document.getElementById('bronzeModal').showModal()">
-                        Learn More
-                    </button>
+                    <button id="bronzeBtn">Learn More</button>
                 </div>
 
                 <div class="membership-card">
                     <h2>Silver Membership</h2>
                     <p>Additional business exposure, support and discounts including grants, loans and health insurance.</p>
 
-                    <button onclick="document.getElementById('silverModal').showModal()">
-                        Learn More
-                    </button>
+                    <button id="silverBtn">Learn More</button>
                 </div>
 
                 <div class="membership-card">
                     <h2>Gold Membership</h2>
                     <p>Premium membership with maximum benefits, including asses to business and health insurance.</p>
 
-                    <button onclick="document.getElementById('goldModal').showModal()">
-                        Learn More
-                    </button>
+                    <button id="goldBtn">Learn More</button>
                 </div>
 
             </aside>
@@ -207,7 +199,7 @@
                 <li>Community support</li>
             </ul>
 
-            <button onclick="npModal.close()">Close</button>
+            <button id="closeNp">Close</button>
 
         </dialog>
 
@@ -222,7 +214,7 @@
                 <li>Assess to grants</li>
             </ul>
 
-            <button onclick="bronzeModal.close()">Close</button>
+            <button id="closeBronze">Close</button>
 
         </dialog>
 
@@ -237,7 +229,7 @@
                 <li>Business promotion</li>
             </ul>
 
-            <button onclick="silverModal.close()">Close</button>
+            <button id="closeSilver">Close</button>
 
         </dialog>
 
@@ -254,7 +246,7 @@
                 <li>Featured business listing</li>
             </ul>
 
-            <button onclick="goldModal.close()">Close</button>
+            <button id="closeGold">Close</button>
 
         </dialog>
 
