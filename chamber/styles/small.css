@@ -124,7 +124,7 @@ h1 {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    background-color:rgba(5, 41, 139, 0.7);
+    background-color: rgba(5, 41, 139, 0.7);
     border-radius: 10px;
     padding: 15px;
     width: 80%;
@@ -159,7 +159,8 @@ h1 {
 }
 
 /*Upcoming Events */
-.weather h2, .events h2 {
+.weather h2,
+.events h2 {
     margin-bottom: 1rem;
 }
 
@@ -168,7 +169,9 @@ h1 {
     gap: 1rem;
 }
 
-.current-weather, .forcast, .event-card {
+.current-weather,
+.forcast,
+.event-card {
     background: #f8f8f8;
     border-left: 5px solid var(--primary);
     padding: 1rem;
@@ -185,8 +188,9 @@ h1 {
 }
 
 /* Home Page Cards */
-.events,.weather,s
-.current-weather,
+.events,
+.weather,
+s .current-weather,
 .forcast,
 .spotlights {
     background: var(--white);
@@ -200,7 +204,7 @@ h1 {
     gap: 1rem;
 }
 
-.weather > h2 {
+.weather>h2 {
     margin-bottom: 0;
 }
 
@@ -362,6 +366,288 @@ p a:hover {
 .list img {
     display: none;
 }
+
+/* Join Form */
+.join-hero {
+    background: #5a5959;
+    color: white;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.join-hero h1 {
+    font-size: 2rem;
+    margin-bottom: .8rem;
+}
+
+.join-hero p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Main Form Container */
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Card Form*/
+
+.join-form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+}
+
+.join-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    margin-top: .4rem;
+    padding: .85rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #fafafa;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.join-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 5px rgba(8, 1, 94, .3);
+    background: white;
+}
+
+.join-form input[type="submit"] {
+    margin-top: 1rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.join-form input[type="submit"]:hover {
+
+    background: #060386;
+}
+
+/* Membership Cards */
+
+.membership-cards {
+
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    animation: fadeUp .8s ease forwards;
+    opacity: 0;
+}
+
+.membership-card:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: .8s;
+}
+
+.membership-card h2 {
+
+    color: var(--primary);
+    margin-bottom: .8rem;
+}
+
+.membership-card p {
+
+    color: #666;
+    line-height: 1.6;
+}
+
+.membership-card button {
+
+    margin-top: 1rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: .7rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.membership-card button:hover {
+
+    background: #060386;
+}
+
+/* Modal */
+
+dialog {
+
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 420px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+}
+
+dialog::backdrop {
+
+    background: rgba(0, 0, 0, .5);
+}
+
+dialog h2 {
+
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+dialog ul {
+
+    padding-left: 1.2rem;
+    line-height: 2;
+}
+
+dialog button {
+
+    margin-top: 1.5rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: .7rem 1.4rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Keyframe Animation */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+/* Thank you page */
+
+.thankyou {
+    max-width: 850px;
+    margin: 3rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .15);
+    text-align: center;
+}
+
+.thankyou h1 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.thankyou>p {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.application-summary {
+    text-align: left;
+    background: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.application-summary h2 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.summary-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.summary-grid p {
+    padding: .8rem;
+    background: white;
+    border-left: 5px solid var(--primary);
+    border-radius: 6px;
+}
+
+.return-btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    padding: .9rem 2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.return-btn:hover {
+    background: #060386;
+}
+
 
 /* Footer style */
 

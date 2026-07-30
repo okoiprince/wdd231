@@ -1,17 +1,17 @@
 @media only screen and (min-width: 768px) {
 
     :root {
-    --primary: #08015e;
-    --secondary: #fff;
-    --accent: #f4f4f4;
-    --white: #ffffff;
-    --dark: #222;
-    --border: #ddd;
-    --box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+        --primary: #08015e;
+        --secondary: #fff;
+        --accent: #f4f4f4;
+        --white: #ffffff;
+        --dark: #222;
+        --border: #ddd;
+        --box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 
-    --header-font: "Exo", sans-serif;
-    --body-font: "Roboto", sans-serif;
-}
+        --header-font: "Exo", sans-serif;
+        --body-font: "Roboto", sans-serif;
+    }
 
     /* Header segment*/
     header {
@@ -78,9 +78,9 @@
     }
 
     .hero-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
 
     /* Main layout */
     .home-grid {
@@ -92,7 +92,8 @@
 
     /* Events and Spotlights spans all columns */
 
-    .events, .spotlights {
+    .events,
+    .spotlights {
         grid-column: 1 / 4;
     }
 
@@ -221,6 +222,47 @@
 
     .list p {
         margin: .3rem 0;
+    }
+
+    /* Join Form*/
+    .join-container {
+
+        display: grid;
+
+        grid-template-columns: 2fr 1fr;
+
+        gap: 2rem;
+
+        align-items: start;
+    }
+
+    .join-form {
+
+        position: sticky;
+
+        top: 20px;
+    }
+
+    .membership-cards {
+
+        display: grid;
+
+        gap: 1.5rem;
+    }
+
+    .join-hero {
+
+        padding: 5rem 2rem;
+    }
+
+    .join-hero h1 {
+
+        font-size: 3rem;
+    }
+
+    /* Thank you page style */
+    .summary-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
     /* Footer*/
