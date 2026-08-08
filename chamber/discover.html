@@ -24,12 +24,13 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
 
     <!-- Javascripts -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,9 +54,9 @@
         <nav>
             <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
             </ul>
         </nav>
 
@@ -63,19 +64,22 @@
 
     <main>
 
-        <h1>Business Directory</h1>
+        <section class="discover-hero">
 
-        <div class="view-buttons">
+            <h1>Discover Cross River State</h1>
 
-            <button id="grid">Grid</button>
-
-            <button id="list">List</button>
-
-        </div>
-
-        <section id="members" class="grid">
+            <p>
+                Explore some of the most beautiful tourist destinations,
+                cultural landmarks and business opportunities in Cross River
+                State, Nigeria.
+            </p>
 
         </section>
+
+        <!-- Visitor Message -->
+        <div id="visit-message" class="visit-message"></div>
+
+        <div id="discover-cards"></div>
 
     </main>
 

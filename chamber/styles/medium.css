@@ -1,0 +1,25 @@
+@media (min-width:641px) {
+
+#discover-cards{
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "card1 card2"
+    "card3 card4"
+    "card5 card6"
+    "card7 card8";
+}
+
+.discover-card{
+    height:100%;
+}
+
+.discover-card img{
+    transition:all .4s ease;
+}
+
+.discover-card img:hover{
+    transform:scale(1.05);
+    filter:brightness(110%);
+}
+
+}
