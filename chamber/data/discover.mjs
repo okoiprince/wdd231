@@ -42,16 +42,16 @@ description: "Mountain resort offering cable cars, hiking and spectacular scener
 },
 
 {
-title: "Kwa Falls",
-image: "images/kwa.webp",
-address: "Akamkpa",
-description: "A natural waterfall surrounded by dense rainforest."
-},
-
-{
 title: "Millennium Park",
 image: "images/millennium.webp",
 address: "Calabar",
 description: "A recreational park ideal for outdoor activities and relaxation."
+},
+
+{
+title: "Leboku International Festival",
+image: "images/leboku.webp",
+address: "Ugep",
+description: "A vibrant cultural festival celebrating Yakurr traditions, heritage and community."
 }
 ];

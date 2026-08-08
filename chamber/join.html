@@ -30,7 +30,7 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/join.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
 
     <!-- Google fonts -->
@@ -84,37 +84,37 @@
 
                     <label>
                         First Name *
-                        <input type="text" name="firstname" required title="Enter your first name"
+                        <input type="text" name="firstname" id="firstname" required title="Enter your first name"
                             autocomplete="given-name">
                     </label>
 
                     <label>
                         Last Name *
-                        <input type="text" name="lastname" required title="Enter your last name"
+                        <input type="text" name="lastname" id="lastname" required title="Enter your last name"
                             autocomplete="family-name">
                     </label>
 
                     <label>
                         Organization Title
-                        <input type="text" name="organizationtitle" title="Your title in the organization"
+                        <input type="text" name="organizationtitle"  title="Your title in the organization"
                             autocomplete="organization-title" pattern="[A-Za-z\\- ]{7,}">
                     </label>
 
                     <label>
                         Email Address *
-                        <input type="email" name="email" required title="Enter a valid email address"
+                        <input type="email" name="email" id="email" required title="Enter a valid email address"
                             autocomplete="email" placeholder="example@email.com">
                     </label>
 
                     <label>
                         Mobile Phone *
-                        <input type="tel" name="phone" required title="Enter your mobile phone number"
+                        <input type="tel" name="phone" id="phone" required title="Enter your mobile phone number"
                             autocomplete="tel">
                     </label>
 
                     <label>
                         Business Name *
-                        <input type="text" name="organization" required title="Business or Organization Name"
+                        <input type="text" name="organization" id="organization" required title="Business or Organization Name"
                             autocomplete="organization">
                     </label>
 

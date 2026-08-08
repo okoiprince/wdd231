@@ -10,7 +10,7 @@ function displayPlaces() {
         card.classList.add("discover-card");
 
         card.innerHTML = `
-            <h2>${place.name}</h2>
+            <h2>${place.title}</h2>
 
             <figure>
                 <img src="${place.image}"
@@ -31,10 +31,7 @@ function displayPlaces() {
     });
 }
 
-
-/* ===========================
-   Visitor Message
-=========================== */
+// Visitor Message
 
 const message = document.querySelector("#visit-message");
 
