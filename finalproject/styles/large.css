@@ -1,6 +1,9 @@
+/* Buzz Printing Press for Larger Screen */
+
 @media only screen and (min-width: 768px) {
 
-    /* Header segment*/
+    /* HEADER DESIGN */
+
     header {
         display: flex;
         align-items: center;
@@ -13,8 +16,8 @@
     }
 
     .logo {
-        text-align: left;
         margin-left: 1rem;
+        text-align: left;
     }
 
     #menu {
@@ -32,17 +35,17 @@
     }
 
     nav a {
+        padding: .7rem 1rem;
         border-radius: 5px;
-        padding: 0 1rem;
     }
 
-    /*Hero Image Content */
+    /*  HERO SECTION */
 
     .hero {
         min-height: 420px;
     }
 
-    .hero img {
+    .hero picture img {
         width: 100%;
         height: 420px;
         object-fit: cover;
@@ -76,7 +79,7 @@
         order: initial;
     }
 
-    /* Service-Card Section */
+    /*  SERVICE CARDS   */
 
     .service-grid {
         grid-template-columns: repeat(4, 1fr);
@@ -87,7 +90,9 @@
         min-height: 300px;
     }
 
-    /* Service Grid and List toggle */
+
+    /*   SERVICE GRID VIEW  */
+
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 1.5rem;
@@ -106,7 +111,7 @@
         font-size: 1.25rem;
     }
 
-    /* Service List */
+    /*   SERVICE LIST VIEW  */
 
     .list {
         display: flex;
@@ -118,12 +123,12 @@
         display: block;
         width: 100%;
         padding: 1.5rem 2rem;
-        text-align: left;
         background: var(--white);
         border: 1px solid var(--border);
         border-left: 5px solid var(--blue);
         border-radius: 10px;
         box-shadow: var(--shadow);
+        text-align: left;
     }
 
     .list img {
@@ -141,31 +146,20 @@
         display: block;
         width: 100%;
         margin: .4rem 0;
-        text-align: left;
+        color: var(--muted);
         line-height: 1.6;
+        text-align: left;
     }
 
     .list p strong {
         color: var(--blue);
     }
 
-    /*gallery cards */
+    /* GALLERY CARDS */
 
-     #gallery-cards {
+    #gallery-cards {
         grid-template-columns: repeat(4, 1fr);
         gap: 1.5rem;
-    }
-
-    .gallery-card img {
-        height: 180px;
-    }
-
-    .gallery-card h2 {
-        font-size: 1.15rem;
-        min-height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .gallery-card {
@@ -173,29 +167,61 @@
         flex-direction: column;
     }
 
+    .gallery-card h2 {
+        display: flex;
+        min-height: 70px;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.15rem;
+    }
+
+    .gallery-card img {
+        height: 180px;
+    }
+
     .gallery-card p {
         flex-grow: 1;
     }
 
-    .split {
-        grid-template-columns: 1fr .75fr;
-    }
+
+    /*  HOME GALLERY */
 
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
+
+    /* FULL GALLERY */
+
     .full-gallery {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* SPLIT SECTION */
+
+    .split {
+        grid-template-columns: 1fr .75fr;
+    }
+
+    /* CONTACT FORM */
 
     .contact-grid {
         grid-template-columns: 1.1fr .75fr;
     }
 
+    /*    FOOTER */
+
     .footer-grid {
         grid-template-columns: 2fr 1fr 1fr;
     }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*  CTA ASIDE SECTION*/
 
     .cta-content {
         display: flex;
@@ -203,25 +229,13 @@
         align-items: center;
     }
 
+    /* SERVICE LIST WITH IMAGE */
+
     .service-list article {
         grid-template-columns: 280px 1fr;
     }
 
     .service-list img {
         width: 280px;
-    }
-
-    .footer-bottom {
-        display: flex;
-    }
-}
-
-@media only screen and (min-width: 1025px) {
-    .section {
-        padding: 5rem 0;
-    }
-
-    .hero h1 {
-        max-width: 760px;
     }
 }
