@@ -604,10 +604,6 @@ h2 {
 
 /*Service Grid and List */
 
-/* =========================================
-   SERVICES PAGE
-========================================= */
-
 /* View Toggle Buttons */
 .view-buttons {
     width: min(92%, 1120px);
@@ -986,22 +982,23 @@ body {
     line-height: 1.6;
 }
 
-/* Learn More button */
-.gallery-card button {
+/* Gallery card button Learn More button */
+.gallery-btn {
     display: block;
     width: calc(100% - 2.4rem);
     margin: 0 1.2rem 1.2rem;
     padding: .8rem 1rem;
-    border: 2px solid var(--blue);
-    border-radius: 7px;
     background: var(--blue);
     color: var(--white);
+    border: 2px solid var(--blue);
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
     font: 700 .95rem var(--heading);
-    cursor: pointer;
     transition: .25s ease;
 }
 
-.gallery-card button:hover {
+.gallery-btn:hover {
     background: var(--sky);
     color: var(--blue);
     transform: translateY(-2px);
