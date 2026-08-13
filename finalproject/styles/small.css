@@ -937,7 +937,7 @@ dialog > button:hover {
     padding: .7rem 1rem;
     border-radius: 6px;
     background: var(--white);
-    color: var(--blue) !important;
+    color: var(--blue);
     font-weight: 700;
     text-decoration: none;
     transition: .25s ease;
@@ -945,7 +945,7 @@ dialog > button:hover {
 
 .youtube-btn:hover {
     background: var(--sky);
-    color: #11133a !important;
+    color: var(--blue);
     transform: translateY(-2px);
 }
 
