@@ -944,7 +944,7 @@ dialog > button:hover {
 }
 
 .youtube-btn:hover {
-    background: #fdcf00;
+    background: var(--sky);
     color: #11133a !important;
     transform: translateY(-2px);
 }
