@@ -43,7 +43,7 @@ a {
     color: inherit;
 }
 
-.container {
+.site-container {
     width: min(92%, 1120px);
     margin-inline: auto;
 }
@@ -170,38 +170,40 @@ nav a.active {
     border-bottom: 3px solid #fdcf00;
 }
 
-/* Brand */
+/* FOOTER BRAND */
 
-.brand {
+.site-brand {
     display: flex;
     align-items: center;
     gap: .75rem;
     text-decoration: none;
 }
 
-.brand-mark {
-    display: grid;
-    place-items: center;
-    width: 44px;
-    height: 44px;
-    background: var(--sky);
-    color: var(--blue);
-    font: 800 1.7rem var(--heading);
-    border-radius: 10px;
-}
-
-.brand strong,
-.brand small {
+.site-brand > img {
     display: block;
+    width: 50px;
+    height: auto;
+    flex-shrink: 0;
 }
 
-.brand strong {
+.site-brand > span {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-brand strong {
+    display: block;
     font: 700 1.1rem var(--heading);
 }
 
-.brand small {
+.site-brand small {
+    display: block;
     font-size: .72rem;
     opacity: .8;
+}
+
+.footer-brand {
+    margin-bottom: 1rem;
 }
 
 
@@ -278,10 +280,9 @@ nav a.active {
     text-align: center;
 }
 
-
 /* FORMATE BUTTONS STYLE */
 
-.btn {
+.action-btn {
     display: inline-block;
     padding: .85rem 1.4rem;
     border: 2px solid transparent;
@@ -291,29 +292,29 @@ nav a.active {
     cursor: pointer;
 }
 
-.btn-primary {
+.primary-btn {
     background: var(--blue);
     color: var(--white);
 }
 
-.hero .btn-primary {
+.hero .primary-btn {
     background: var(--sky);
     color: var(--blue);
 }
 
-.btn-light {
+.light-btn {
     background: var(--white);
     color: var(--blue);
 }
 
-.btn:hover {
+.action-btn:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow);
 }
 
 /* SECTIONS STYLE */
 
-.section {
+.content-section {
     padding: 5rem 0;
 }
 
