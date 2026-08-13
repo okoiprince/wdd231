@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Business Card Printing",
+        "image": "business-cards.webp",
+        "price": "From ₦5,000",
+        "description": "Professional business card printing for individuals, entrepreneurs and organizations. Available in different sizes, paper types and finishes."
+    },
+    {
+        "title": "Banner Printing",
+        "image": "banner.webp",
+        "price": "From ₦8,000",
+        "description": "High-quality large-format banners suitable for businesses, churches, schools, weddings, birthdays, campaigns and other events."
+    },
+    {
+        "title": "Flyer Printing",
+        "image": "flyers.webp",
+        "price": "From ₦5,000",
+        "description": "Attractive and professional flyers printed for business promotions, product advertising, special events and announcements."
+    },
+    {
+        "title": "Poster Printing",
+        "image": "posters.webp",
+        "price": "From ₦6,000",
+        "description": "High-quality posters for advertising, events, promotions, campaigns, educational activities and public announcements."
+    },
+    {
+        "title": "Graphic Design",
+        "image": "graphic-design.webp",
+        "price": "From ₦5,000",
+        "description": "Creative graphic design services including logos, flyers, posters, business cards, social media graphics and promotional materials."
+    },
+    {
+        "title": "Wedding Invitation Printing",
+        "image": "invitation.webp",
+        "price": "From ₦10,000",
+        "description": "Elegant and professionally printed wedding invitations customized to match your event theme, colors and personal style."
+    },
+    {
+        "title": "Event Programme Printing",
+        "image": "programmes.webp",
+        "price": "From ₦8,000",
+        "description": "Quality programmes for weddings, funerals, graduations, conferences, church events and other special occasions."
+    },
+    {
+        "title": "Receipt Printing",
+        "image": "receipts.webp",
+        "price": "From ₦7,000",
+        "description": "Custom printed business receipts designed with your company name, logo, contact information and other required details."
+    },
+    {
+        "title": "Invoice Printing",
+        "image": "invoice.webp",
+        "price": "From ₦7,000",
+        "description": "Professional invoice books and documents designed to help businesses maintain organized and branded financial records."
+    },
+    {
+        "title": "Letterhead Printing",
+        "image": "letterhead.webp",
+        "price": "From ₦6,000",
+        "description": "Branded letterheads designed and printed for companies, schools, churches, government offices and other organizations."
+    },
+    {
+        "title": "Envelope Printing",
+        "image": "envelopes.webp",
+        "price": "From ₦6,000",
+        "description": "Custom branded envelopes that give your business correspondence a professional and consistent appearance."
+    },
+    {
+        "title": "Sticker Printing",
+        "image": "stickers.webp",
+        "price": "From ₦5,000",
+        "description": "Custom stickers for product packaging, branding, promotions, labeling, events and personal projects."
+    },
+    {
+        "title": "Brochure Printing",
+        "image": "brochures.webp",
+        "price": "From ₦10,000",
+        "description": "Professional brochures designed and printed to showcase your business, products, services, organization or upcoming event."
+    },
+    {
+        "title": "Certificate Printing",
+        "image": "certificates.webp",
+        "price": "From ₦5,000",
+        "description": "Beautiful certificates for schools, churches, businesses, training programmes, awards and other recognition events."
+    },
+    {
+        "title": "Branded Promotional Materials",
+        "image": "branding.webp",
+        "price": "From ₦15,000",
+        "description": "Customized promotional materials and branded items that help businesses and organizations increase visibility and strengthen their brand identity."
+    }
+]
