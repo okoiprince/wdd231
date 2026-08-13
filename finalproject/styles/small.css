@@ -919,7 +919,7 @@ dialog > button:hover {
     color: var(--sky);
 }
 
-.footer-grid a:not(.brand) {
+.footer-grid a:not(.site-brand) {
     display: block;
     margin: .4rem 0;
     text-decoration: none;
@@ -927,10 +927,6 @@ dialog > button:hover {
 
 .footer-grid p {
     color: #d0d2e0;
-}
-
-.footer-brand {
-    margin-bottom: 1rem;
 }
 
 /* YouTube button */
